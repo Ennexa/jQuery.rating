@@ -5,7 +5,7 @@
  * @version 2.0.0
  *
  */
-
+/*! http://git.io/rating | © Ennexa Technologies | http://www.ennexa.com/ */
 (function ($, undefined) {
 	'use strict';
 	
