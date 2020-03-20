@@ -1,11 +1,11 @@
 /**
  * jQuery.rating - 5 star rating plugin
- * Copyright (c) Ennexa Technologies (P) Ltd | http://www.ennexa.com/
+ * Copyright (c) Ennexa Technologies (P) Ltd | https://www.ennexa.com/
  * Dual licensed under MIT and GPL.
  * @version 2.0.0
  *
  */
-/*! http://git.io/rating | © Ennexa Technologies | http://www.ennexa.com/ */
+/*! https://git.io/rating | © Ennexa Technologies | https://www.ennexa.com/ */
 (function ($, undefined) {
 	'use strict';
 	
@@ -22,7 +22,7 @@
 		// Add a delay to prevent the event from firing multiple times
 		setTimeout(function () {
 			var match = id.match(/(.*)-(\d+)/);
-			opts.xhr = $.post(opts.url, {item_section: match[1], item_id: match[2], rating_value: value}, function (res) {
+			opts.xhr = $.post(opts.url, {item_type: match[1], item_id: match[2], rating_value: value}, function (res) {
 				if (res.status === "OK") {
 					$.cookie('rating.' + id, value, $.extend({path : null, expires : 30}, opts.cookie));
 					data.options.rated = true;
